@@ -1,0 +1,21 @@
+{
+    "name": "extractwords",
+    "version": "0.0.0",
+    "description": "Extract the words from a string",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js"
+    },
+    "author": "Faraz",
+    "engines": {
+        "node": ">=6"
+    },
+    "license": "MIT",
+    "repository": "f-a-r-a-z/extractwords",
+    "files": [
+        "index.js"
+    ],
+    "keywords": [
+        "words", "word", "extract", "natural", "language", "processing", "string", "parse"
+    ]
+}
