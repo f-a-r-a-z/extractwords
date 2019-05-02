@@ -1,4 +1,4 @@
-# extractwords [![Build Status](https://travis-ci.org/f-a-r-a-z/extractwords.svg?branch=master)](https://travis-ci.org/f-a-r-a-z/extractwords)
+# extractwords [![Build Status](https://api.travis-ci.com/f-a-r-a-z/extractwords.svg?branch=master)](https://travis-ci.org/f-a-r-a-z/extractwords)
 
 
 
