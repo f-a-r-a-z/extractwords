@@ -11,7 +11,7 @@
         "node": ">=6"
     },
     "license": "MIT",
-    "repository": "f-a-r-a-z/extractwords",
+    "repository": "github:f-a-r-a-z/extractwords",
     "files": [
         "index.js"
     ],
