@@ -4,7 +4,7 @@
     "description": "Extract the words from a string",
     "main": "index.js",
     "scripts": {
-        "test": "node test.js"
+        "test": "node test.js && xo index.js"
     },
     "author": "Faraz",
     "engines": {
@@ -27,5 +27,8 @@
         "processing",
         "string",
         "parse"
-    ]
+    ],
+    "devDependencies": {
+        "xo": "^0.24.0"
+    }
 }
