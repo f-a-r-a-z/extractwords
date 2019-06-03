@@ -11,7 +11,7 @@ module.exports = (str, options = {}) => {
 
 	let words;
 	if (options.punctuation) {
-		words = str.match(/\S*[a-zA-Z]+\S*('\S*[a-zA-Z]+\S*)?/g) || [];
+		words = str.match(/\S+/g) || [];
 	} else {
 		words = str.match(/[a-zA-Z]+('[a-zA-Z]+)?/g) || [];
 	}

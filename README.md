@@ -17,22 +17,20 @@ const extractwords = require('extractwords');
 extractwords('Good Morning, how are you?');
 //=> ['Good', 'Morning', 'how', 'are', 'you']
 
-extractwords('Good morning, how are you?', {lowercase: true});
-//=> ['good', 'morning', 'how', 'are', 'you']
-
-extractwords('Good Morning, how are you?', {punctuation: true});
-//=> ['Good', 'Morning,', 'how', 'are', 'you?']
-
-extractwords('Great work ... son.', {punctuation: true});
-//=> ['Great', 'work', 'son.']
-
 extractwords("He didn't pay for his meal m'aam");
 //=> ['He', "didn't", 'pay', 'for', 'his', 'meal', "m'aam"]
 
-extractwords("17651Hello*&!(*2I'm_++`~gOOd");
+extractwords("17651Hello*&!(*2I'm_++`~gOOd 2");
 //=> ['Hello', "I'm", 'gOOd']
 
+extractwords('Good morning, how are you?', {lowercase: true});
+//=> ['good', 'morning', 'how', 'are', 'you']
 
+extractwords('Good Morning. how are you?', {punctuation: true});
+//=> ['Good', 'Morning.', 'how', 'are', 'you?']
+
+extractwords('I . am ... go0d 2', {punctuation: true});
+//=> ['I', '.', 'am', '...', 'go0d', '2']
 ```
 
 
@@ -62,5 +60,4 @@ If `true`, all words returned are lowercased.
 Type: `boolean`<br>
 Default: `false`
 
-If `true`, all punctuation next to words are retained.
-
+If `true`, all punctuation is retained.
