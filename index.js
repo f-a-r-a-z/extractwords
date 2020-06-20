@@ -3,7 +3,7 @@ const defaults = {
 	punctuation: false
 };
 
-module.exports = (str, options = {}) => {
+module.exports = (string, options = {}) => {
 	options = {
 		...defaults,
 		...options
@@ -11,13 +11,13 @@ module.exports = (str, options = {}) => {
 
 	let words;
 	if (options.punctuation) {
-		words = str.match(/\S+/g) || [];
+		words = string.match(/\S+/g) || [];
 	} else {
-		words = str.match(/[a-zA-Z]+('[a-zA-Z]+)?/g) || [];
+		words = string.match(/[a-zA-Z]+('[a-zA-Z]+)?/g) || [];
 	}
 
 	if (options.lowercase) {
-		words = words.map(str => str.toLowerCase());
+		words = words.map(string => string.toLowerCase());
 	}
 
 	return words;
