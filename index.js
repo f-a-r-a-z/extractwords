@@ -9,12 +9,9 @@ const extractWords = (string, options = {}) => {
 		...options
 	};
 
-	let words;
-	if (options.punctuation) {
-		words = string.match(/\S+/g) || [];
-	} else {
-		words = string.match(/[a-zA-Z]+('[a-zA-Z]+)?/g) || [];
-	}
+	let words = options.punctuation ?
+		string.match(/\S+/g) || [] :
+		string.match(/[a-zA-Z]+('[a-zA-Z]+)?/g) || [];
 
 	if (options.lowercase) {
 		words = words.map(string => string.toLowerCase());
