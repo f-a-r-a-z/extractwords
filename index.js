@@ -3,7 +3,7 @@ const defaults = {
 	punctuation: false
 };
 
-module.exports = (string, options = {}) => {
+const extractWords = (string, options = {}) => {
 	options = {
 		...defaults,
 		...options
@@ -22,3 +22,5 @@ module.exports = (string, options = {}) => {
 
 	return words;
 };
+
+export default extractWords;
