@@ -7,8 +7,10 @@
         "test": "node test.js && xo index.js"
     },
     "author": "Faraz",
+    "type": "module",
+    "exports": "./index.js",
     "engines": {
-        "node": ">=8.3.0"
+        "node": ">=12"
     },
     "license": "MIT",
     "repository": {
@@ -29,6 +31,6 @@
         "parse"
     ],
     "devDependencies": {
-        "xo": "^0.32.0"
+        "xo": "^0.40.2"
     }
 }

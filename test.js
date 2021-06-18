@@ -1,5 +1,5 @@
-const {deepEqual} = require('assert');
-const words = require('./index.js');
+import {deepEqual} from 'assert';
+import words from './index.js';
 
 deepEqual(words('Hello how are you'), ['Hello', 'how', 'are', 'you']);
 deepEqual(words(''), []);
