@@ -31,6 +31,6 @@
         "parse"
     ],
     "devDependencies": {
-        "xo": "^0.40.2"
+        "xo": "^0.42.0"
     }
 }
